@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> <!-- 타임리프 사용 선언 -->
+<head>
+    <meta charset="UTF-8">
+    <title>Model 예제</title>
+</head>
+<body>
+    <h1>컨트롤러의 값을 확인!</h1><br>
+    <h1 th:text="${data1}"></h1> <!-- 컨트롤러에서 삽입된 데이터를 가져옴 -->
+    <h2 th:text="${data2}"></h2>
+    <h4 th:text="${copy}"></h4>
+</body>
+</html>

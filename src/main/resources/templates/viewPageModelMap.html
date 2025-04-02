@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ModelMap의 사용 예제</title>
+</head>
+<body>
+    <h1 th:text="${message1}"></h1>
+    <h2 th:text="${message2}"></h2>
+    <ul> <!-- 과일 리스트에 있는 데이터 값 만큼 반복하여 임시 변수에 저장한다. -->
+        <li th:each="item : ${fruitslist}" th:text="${item}"></li>
+    </ul>
+    <h4>&copy[[${copy}]]</h4>
+</body>
+</html>
